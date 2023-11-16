@@ -5,8 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Helvetica Neue", 'sans-serif'],
+   
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require ('@tailwindcss/typography'),
+  ],
 }
 
